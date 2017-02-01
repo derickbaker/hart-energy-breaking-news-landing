@@ -1,0 +1,368 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,700,900);
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+h1, h2, h3, h4, h4, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 12px 22px;
+    color: #fff;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background: #303030;
+    font-size: 14px;
+    font-weight: 500;
+    vertical-align: top;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    position: relative;
+    white-space: nowrap;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-box-shadow: inset 0 -100px 0 rgba(41,41,41,0);
+    box-shadow: inset 0 -100px 0 rgba(41,41,41,0);
+    -webkit-appearance: none;
+    margin-bottom: 15px;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+.button:hover,
+.button:focus,
+.button:active {
+    color: #fff;
+    -webkit-transition: 0.25s !important;
+    transition: 0.25s !important;
+    opacity: 1;
+    -webkit-box-shadow: inset 0 -100px 0 rgba(41,41,41,0.15), 0 4px 6px 0 rgba(0,0,0,.1),0 1px 10px 0 rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.1);
+    box-shadow: inset 0 -100px 0 rgba(41,41,41,0.15), 0 4px 6px 0 rgba(0,0,0,.1),0 1px 10px 0 rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.1);
+    text-decoration: none;
+}
+.round {
+    border-radius: 40px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+#preloader {
+    background: #fff;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    z-index: 9999;
+}
+#navigation {
+    background-color: transparent;
+    border: none;
+    height: 70px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.navbar-brand {
+    height: 127px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.navbar-brand img {
+    height: 47px;
+}
+#navigation .social-icons {
+    margin-top: 10px;
+}
+#navigation .facebook a {
+    color: #3C599F;
+}
+#navigation .twitter a {
+    color: #32CCFE;
+}
+#navigation .linkedin a {
+    color: #0085AE;
+}
+#navigation .social-icons a {
+    font-size: 18px;
+}
+.background {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover; 
+}
+#showcase {
+    background: #00c6ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #00c6ff , #0072ff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    overflow: hidden;
+    position: relative;
+}
+#showcase .container {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+#showcase .background {
+    background-image: url("../images/showcase-bg.jpg");
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -webkit-transform: translate3d(0, 0, 0);
+    /*transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 5s cubic-bezier(0.3, 0, 0.7, 1), opacity 1s ease;
+    transition: transform 5s cubic-bezier(0.3, 0, 0.7, 1), opacity 1s ease; */
+}
+/*.loaded #showcase .background {
+    opacity: .8;
+    filter: alpha(opacity=80);
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}*/
+#showcase .text-block {
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+#showcase h1 {
+    font-size: 44px;
+    line-height: 1.05;
+    font-weight: 700;
+    margin: 30px 0;
+}
+#showcase p {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 0 30px 0;
+}
+#showcase ul.list-inline{
+    margin: 0;
+}
+#showcase ul.list-inline li {
+    padding: 0 10px;
+}
+#showcase ul.list-inline li:first-child {
+    padding-left: 0;
+}
+#showcase .button {
+    background-color: #43cb83;
+    font-size: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+
+}
+#showcase .button.outline {
+    background-color: transparent;
+    border: 2px solid rgba(255,255,255,.7);
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+#showcase .button.outline:hover,
+#showcase .button.outline:focus,
+#showcase .button.outline:active {
+    border-color: #fff;
+}
+#showcase .showcase-phones {
+    position: absolute;
+    right: 0;
+}
+#features .container {
+    padding: 80px 15px;
+}
+#features .title h2 {
+    color: #3e3f42;
+    font: 900 52px/1 'Raleway', sans-serif;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#features .title p {
+    color: #676b6e;
+    display: block;
+    font: 400 20px/28px 'Lato', serif;
+    margin-bottom: 80px;
+    text-align: center;
+}
+#features .screen {
+    max-width: 100%;
+    height: auto;
+}
+#features .feature-list-left, 
+#features .feature-list-right {
+    margin: 0;
+}
+#features .feature-list-left li, 
+#features .feature-list-right li {
+    text-align: center;
+    padding: 0 0 40px 0;
+}
+
+#features .feature-list-left li h3,
+#features .feature-list-right li h3 {
+    color: #2e71f2;
+    font: 900 24px/1.2 'Raleway', sans-serif;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+}
+#features .feature-list-left li p,
+#features .feature-list-right li p {
+    color: #676b6e;
+    font: 400 14px/21px 'Lato', serif;
+    margin: 0 0 10px 0;
+}
+
+#two {
+    background-color: #e0e0e0;
+    padding: 90px 0;
+    overflow: hidden;
+    text-align: center;
+}
+#two h2 {
+    font-size: 44px;
+    font-weight: bold;
+    margin: 60px 0 30px 0;
+}
+#two p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #4f5362;
+    margin: 0;
+}
+#two br {
+    display: none;
+}
+.app-download {
+    margin-top: 30px;
+}
+.app-download a {
+    display: block;
+}
+.app-download img {
+    height: 50px;
+}
+
+footer {
+    background-color: #222328;
+    padding: 60px 0;
+}
+
+
+footer .bottom p {
+    color: #eff0f4;
+    margin: 0;
+}
+footer .copyright {
+    text-align: right;
+}
+footer .bottom ul li {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+footer .bottom ul li:last-child {
+    padding-right: 0;
+}
+footer .bottom ul li a {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+footer .bottom ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+@media (min-width: 768px) {
+    #showcase .container {
+        padding-top: 180px;
+        padding-bottom: 180px;
+    }
+    #showcase h1 {
+        font-size: 60px;
+    }
+    #features .feature-list-left li {
+        padding: 0 0 40px 0;
+        position: relative;
+        text-align: right;
+    }
+    #features .feature-list-right li {
+        padding: 0 0px 40px 0;
+        position: relative;
+        text-align: left;
+    }
+    #features .feature-list-left li h3,
+    #features .feature-list-right li h3 {
+        color: #2e71f2;
+        font: 900 14px/21px 'Raleway', sans-serif;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+    #features .feature-list-left li p,
+    #features .feature-list-right li p {
+        color: #676b6e;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media (min-width: 992px) {
+    #video {
+        text-align: left;
+    }
+    .intro-block {
+        text-align: left;
+    }
+    #showcase .text-block {
+        text-align: left;
+    }
+    #showcase h1 {
+        font-size: 42px;
+        margin: 60px 20px 30px 0;
+    }
+    #showcase p {
+        margin-right: 20px;
+    }
+    
+    #showcase .showcase-phones {
+        max-width: 500px;
+    }
+    #two {
+        padding: 90px 0 0 0;
+    }
+    #two br {
+        display: block;
+    }
+
+}
+
+
+@media (min-width: 1170px) {
+    
+    #showcase h1 {
+        font-size: 52px;
+        line-height: 1.05;
+    }
+    #showcase .showcase-phones {
+        max-width: 100%;
+    }
+    #two {
+        text-align: left;
+    }
+}
