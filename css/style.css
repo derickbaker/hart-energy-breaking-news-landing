@@ -184,51 +184,58 @@ h1, h2, h3, h4, h4, h6 {
     position: absolute;
     right: 0;
 }
+#logo-bar {
+    background-color: #f0f0f0;
+    padding: 30px 0;
+    text-align: center;
+}
+#logo-bar h5 {
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+}
+#logo-bar ul {
+    margin: 0;
+}
+#logo-bar ul li {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+#logo-bar img {
+    height: 50px;
+
+}
 #features .container {
-    padding: 80px 15px;
+    padding: 120px 15px 80px;
 }
 #features .title h2 {
     color: #3e3f42;
     font: 900 52px/1 'Raleway', sans-serif;
     margin-top: 0;
     margin-bottom: 20px;
-    text-align: center;
 }
 #features .title p {
     color: #676b6e;
     display: block;
     font: 400 20px/28px 'Lato', serif;
-    margin-bottom: 80px;
-    text-align: center;
+    margin-bottom: 60px;
 }
 #features .screen {
     max-width: 100%;
     height: auto;
 }
-#features .feature-list-left, 
-#features .feature-list-right {
-    margin: 0;
+#features ul li {
+    margin-bottom: 30px;
 }
-#features .feature-list-left li, 
-#features .feature-list-right li {
-    text-align: center;
-    padding: 0 0 40px 0;
+#features ul li .icon {
+    color: #009bff;
+    font-size: 32px;
 }
-
-#features .feature-list-left li h3,
-#features .feature-list-right li h3 {
-    color: #2e71f2;
-    font: 900 24px/1.2 'Raleway', sans-serif;
-    margin: 0 0 10px 0;
+#features h4 {
+    font: 900 14px/1.2 'Raleway', sans-serif;
     text-transform: uppercase;
 }
-#features .feature-list-left li p,
-#features .feature-list-right li p {
-    color: #676b6e;
-    font: 400 14px/21px 'Lato', serif;
-    margin: 0 0 10px 0;
-}
-
 #two {
     background-color: #e0e0e0;
     padding: 90px 0;
@@ -292,7 +299,7 @@ footer .bottom ul li a:hover {
 }
 @media (min-width: 768px) {
     #showcase .container {
-        padding-top: 180px;
+        padding-top: 90px;
         padding-bottom: 180px;
     }
     #showcase h1 {
@@ -358,6 +365,7 @@ footer .bottom ul li a:hover {
     #showcase h1 {
         font-size: 52px;
         line-height: 1.05;
+        margin-top: 180px;
     }
     #showcase .showcase-phones {
         max-width: 100%;
