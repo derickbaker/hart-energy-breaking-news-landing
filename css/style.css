@@ -117,7 +117,7 @@ h1, h2, h3, h4, h4, h6 {
     padding-bottom: 90px;
 }
 #showcase .background {
-    background-image: url("https://unsplash.it/1280/720/?random");
+    background-image: url("../images/duietczn7o4-cristina-gottardi.jpg");
     opacity: 0.05;
     filter: alpha(opacity=10);
     -webkit-transform: translate3d(0, 0, 0);
@@ -194,8 +194,8 @@ h1, h2, h3, h4, h4, h6 {
     margin: 0;
 }
 #logo-bar ul li {
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 #logo-bar img {
     height: 50px;
@@ -243,7 +243,6 @@ h1, h2, h3, h4, h4, h6 {
     transform: translate3d(0, 0, 0);
 }
 #two h2 {
-    font-size: 44px;
     font-weight: 300;
     margin: 0 0 30px 0;
 }
@@ -294,7 +293,7 @@ footer .bottom ul li a:hover {
 }
 @media (min-width: 768px) {
     #showcase .container {
-        padding-top: 90px;
+        padding-top: 160px;
         padding-bottom: 120px;
     }
     #showcase h1 {
@@ -307,12 +306,14 @@ footer .bottom ul li a:hover {
     #logo-bar img {
         margin-bottom: 0;
     }
-    #features h2 {
+    #features h2,
+    #two h2 {
         font-size: 44px;
     }
     #two {
         padding: 110px 0;
     }
+    
 }
 @media (min-width: 992px) {
     #video {
@@ -348,11 +349,12 @@ footer .bottom ul li a:hover {
     #showcase h1 {
         font-size: 56px;
         line-height: 65px;
-        margin-top: 120px;
+        margin-top: 80px;
     }
     #showcase .showcase-phones {
         max-width: 100%;
     }
+   
     #two {
         text-align: left;
     }
