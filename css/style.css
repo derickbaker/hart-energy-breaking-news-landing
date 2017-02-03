@@ -199,7 +199,7 @@ h1, h2, h3, h4, h4, h6 {
 }
 #logo-bar img {
     height: 50px;
-
+    margin-bottom: 15px;
 }
 #features .container {
     padding: 120px 15px 80px;
@@ -252,7 +252,7 @@ h1, h2, h3, h4, h4, h6 {
     display: none;
 }
 .app-download {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 .app-download a {
     display: block;
@@ -304,8 +304,14 @@ footer .bottom ul li a:hover {
         padding-top: 60px;
         padding-bottom: 60px;
     }
+    #logo-bar img {
+        margin-bottom: 0;
+    }
     #features h2 {
         font-size: 44px;
+    }
+    #two {
+        padding: 110px 0;
     }
 }
 @media (min-width: 992px) {
