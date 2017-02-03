@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,600,700,900);
 
 body {
     font-family: 'Lato', sans-serif;
@@ -108,9 +108,7 @@ h1, h2, h3, h4, h4, h6 {
       background-size: cover; 
 }
 #showcase {
-    background: #00c6ff; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #00c6ff , #0072ff); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background: #1E263B;
     overflow: hidden;
     position: relative;
 }
@@ -119,21 +117,19 @@ h1, h2, h3, h4, h4, h6 {
     padding-bottom: 90px;
 }
 #showcase .background {
-    background-image: url("../images/showcase-bg.jpg");
-    opacity: 0.4;
-    filter: alpha(opacity=40);
+    background-image: url("https://unsplash.it/1280/720/?random");
+    opacity: 0.05;
+    filter: alpha(opacity=10);
     -webkit-transform: translate3d(0, 0, 0);
-    /*transform: translate3d(0, 0, 0);
-    -webkit-transition: -webkit-transform 5s cubic-bezier(0.3, 0, 0.7, 1), opacity 1s ease;
-    transition: transform 5s cubic-bezier(0.3, 0, 0.7, 1), opacity 1s ease; */
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 5s cubic-bezier(0.3, 0, 0.7, 1);
+    transition: transform 5s cubic-bezier(0.3, 0, 0.7, 1);
 }
-/*.loaded #showcase .background {
-    opacity: .8;
-    filter: alpha(opacity=80);
+.loaded #showcase .background {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
-}*/
+}
 #showcase .text-block {
     color: #fff;
     position: relative;
@@ -143,12 +139,11 @@ h1, h2, h3, h4, h4, h6 {
 #showcase h1 {
     font-size: 44px;
     line-height: 1.05;
-    font-weight: 700;
+    font-weight: 300;
     margin: 30px 0;
 }
 #showcase p {
-    font-size: 18px;
-    line-height: 28px;
+    color: #D0E5FF;
     margin: 0 0 30px 0;
 }
 #showcase ul.list-inline{
@@ -185,14 +180,14 @@ h1, h2, h3, h4, h4, h6 {
     right: 0;
 }
 #logo-bar {
-    background-color: #f0f0f0;
+    background-color: #fafafa;
+    border-bottom: 1px solid #eee;
     padding: 30px 0;
     text-align: center;
 }
 #logo-bar h5 {
-    font-weight: bold;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
     margin: 0 0 30px 0;
 }
 #logo-bar ul {
@@ -211,14 +206,11 @@ h1, h2, h3, h4, h4, h6 {
 }
 #features .title h2 {
     color: #3e3f42;
-    font: 900 52px/1 'Raleway', sans-serif;
     margin-top: 0;
     margin-bottom: 20px;
 }
 #features .title p {
-    color: #676b6e;
     display: block;
-    font: 400 20px/28px 'Lato', serif;
     margin-bottom: 60px;
 }
 #features .screen {
@@ -230,29 +222,32 @@ h1, h2, h3, h4, h4, h6 {
 }
 #features ul li .icon {
     color: #009bff;
-    font-size: 32px;
+    font-size: 36px;
 }
 #features h4 {
-    font: 900 14px/1.2 'Raleway', sans-serif;
-    text-transform: uppercase;
+    font: 600 18px 'Raleway', sans-serif;
 }
 #two {
-    background-color: #e0e0e0;
+    background: #1E263B;
+    color: #fff;
     padding: 90px 0;
     overflow: hidden;
+    position: relative;
     text-align: center;
+}
+#two .background {
+    background-image: url('https://unsplash.it/1280/720/?random');
+    opacity: 0.05;
+    filter: alpha(opacity=10);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 #two h2 {
     font-size: 44px;
-    font-weight: bold;
-    margin: 60px 0 30px 0;
+    font-weight: 300;
+    margin: 0 0 30px 0;
 }
-#two p {
-    font-size: 18px;
-    line-height: 28px;
-    color: #4f5362;
-    margin: 0;
-}
+
 #two br {
     display: none;
 }
@@ -262,18 +257,18 @@ h1, h2, h3, h4, h4, h6 {
 .app-download a {
     display: block;
 }
-.app-download img {
+.app-download img,
+.app-download svg {
     height: 50px;
 }
 
 footer {
-    background-color: #222328;
+    background-color: #fff;
     padding: 60px 0;
 }
 
 
 footer .bottom p {
-    color: #eff0f4;
     margin: 0;
 }
 footer .copyright {
@@ -287,46 +282,30 @@ footer .bottom ul li:last-child {
     padding-right: 0;
 }
 footer .bottom ul li a {
-    color: #fff;
+    color: #333;
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
 footer .bottom ul li a:hover {
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 @media (min-width: 768px) {
     #showcase .container {
         padding-top: 90px;
-        padding-bottom: 180px;
+        padding-bottom: 120px;
     }
     #showcase h1 {
         font-size: 60px;
     }
-    #features .feature-list-left li {
-        padding: 0 0 40px 0;
-        position: relative;
-        text-align: right;
+    #logo-bar {
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
-    #features .feature-list-right li {
-        padding: 0 0px 40px 0;
-        position: relative;
-        text-align: left;
-    }
-    #features .feature-list-left li h3,
-    #features .feature-list-right li h3 {
-        color: #2e71f2;
-        font: 900 14px/21px 'Raleway', sans-serif;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-    }
-    #features .feature-list-left li p,
-    #features .feature-list-right li p {
-        color: #676b6e;
-        font-size: 16px;
-        line-height: 24px;
+    #features h2 {
+        font-size: 44px;
     }
 }
 @media (min-width: 992px) {
@@ -350,9 +329,7 @@ footer .bottom ul li a:hover {
     #showcase .showcase-phones {
         max-width: 500px;
     }
-    #two {
-        padding: 90px 0 0 0;
-    }
+    
     #two br {
         display: block;
     }
@@ -363,9 +340,9 @@ footer .bottom ul li a:hover {
 @media (min-width: 1170px) {
     
     #showcase h1 {
-        font-size: 52px;
-        line-height: 1.05;
-        margin-top: 180px;
+        font-size: 56px;
+        line-height: 65px;
+        margin-top: 120px;
     }
     #showcase .showcase-phones {
         max-width: 100%;
