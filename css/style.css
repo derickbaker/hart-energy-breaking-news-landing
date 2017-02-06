@@ -108,10 +108,10 @@ h1, h2, h3, h4, h4, h6 {
       background-size: cover; 
 }
 #showcase {
-   background: #243b55;
-    background: -moz-linear-gradient(-45deg,  #243b55 0%, #141e30 100%);
-    background: -webkit-linear-gradient(-45deg,  #243b55 0%,#141e30 100%);
-    background: linear-gradient(135deg,  #243b55 0%,#141e30 100%);
+    background: #243b55;
+    background: -moz-linear-gradient(-45deg, #243b55 0%, #141e30 100%);
+    background: -webkit-linear-gradient(-45deg, #243b55 0%,#141e30 100%);
+    background: linear-gradient(135deg, #243b55 0%,#141e30 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#243b55', endColorstr='#141e30',GradientType=1 );
     overflow: hidden;
     position: relative;
@@ -121,19 +121,20 @@ h1, h2, h3, h4, h4, h6 {
     padding-bottom: 90px;
 }
 #showcase .background {
-    background-image: url("../images/duietczn7o4-cristina-gottardi.jpg");
-    opacity: 0.2;
-    filter: alpha(opacity=10);
+    background-image: url("../images/showcase-bg5.jpg");
+    background-position: center bottom;
+    opacity: 0.25;
+    filter: alpha(opacity=25);
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     -webkit-transition: -webkit-transform 5s cubic-bezier(0.3, 0, 0.7, 1);
     transition: transform 5s cubic-bezier(0.3, 0, 0.7, 1);
 }
-.loaded #showcase .background {
+/*.loaded #showcase .background {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
-}
+}*/
 #showcase .text-block {
     color: #fff;
     position: relative;
@@ -147,7 +148,7 @@ h1, h2, h3, h4, h4, h6 {
     margin: 30px 0;
 }
 #showcase p {
-    color: #D0E5FF;
+    color: rgba(255,255,255,.9);
     margin: 0 0 30px 0;
 }
 #showcase ul.list-inline{
@@ -330,6 +331,9 @@ footer .bottom ul li a:hover {
     .intro-block {
         text-align: left;
     }
+    #showcase .background {
+        opacity: .9;
+    }
     #showcase .text-block {
         text-align: left;
     }
@@ -353,11 +357,14 @@ footer .bottom ul li a:hover {
 
 
 @media (min-width: 1170px) {
-    
+    #showcase .container {
+        padding-top: 160px;
+        padding-bottom: 160px;
+    }
     #showcase h1 {
         font-size: 46px;
         line-height: 65px;
-        margin-top: 80px;
+        margin-top: 0px;
         margin-bottom: 10px;
     }
     #showcase .showcase-phones {
@@ -366,5 +373,16 @@ footer .bottom ul li a:hover {
    
     #two {
         text-align: left;
+    }
+}
+@media screen and (min-width: 1400px) {
+    #showcase .container {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+}
+@media screen and (min-width: 1600px) {
+    #showcase .background {
+        background-position: center bottom;
     }
 }
