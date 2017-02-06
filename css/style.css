@@ -108,7 +108,11 @@ h1, h2, h3, h4, h4, h6 {
       background-size: cover; 
 }
 #showcase {
-   background: #1E263B;
+   background: #243b55;
+    background: -moz-linear-gradient(-45deg,  #243b55 0%, #141e30 100%);
+    background: -webkit-linear-gradient(-45deg,  #243b55 0%,#141e30 100%);
+    background: linear-gradient(135deg,  #243b55 0%,#141e30 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#243b55', endColorstr='#141e30',GradientType=1 );
     overflow: hidden;
     position: relative;
 }
@@ -118,7 +122,7 @@ h1, h2, h3, h4, h4, h6 {
 }
 #showcase .background {
     background-image: url("../images/duietczn7o4-cristina-gottardi.jpg");
-    opacity: 0.05;
+    opacity: 0.2;
     filter: alpha(opacity=10);
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -228,7 +232,11 @@ h1, h2, h3, h4, h4, h6 {
     font: 600 18px 'Raleway', sans-serif;
 }
 #two {
-    background: #1E263B;
+    background: #243b55;
+    background: -moz-linear-gradient(-45deg,  #243b55 0%, #141e30 100%);
+    background: -webkit-linear-gradient(-45deg,  #243b55 0%,#141e30 100%);
+    background: linear-gradient(135deg,  #243b55 0%,#141e30 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#243b55', endColorstr='#141e30',GradientType=1 );
     color: #fff;
     padding: 90px 0;
     overflow: hidden;
@@ -347,9 +355,10 @@ footer .bottom ul li a:hover {
 @media (min-width: 1170px) {
     
     #showcase h1 {
-        font-size: 56px;
+        font-size: 46px;
         line-height: 65px;
         margin-top: 80px;
+        margin-bottom: 10px;
     }
     #showcase .showcase-phones {
         max-width: 100%;
