@@ -78,8 +78,10 @@ h1, h2, h3, h4, h4, h6 {
     padding-top: 40px;
     padding-bottom: 40px;
 }
-.navbar-brand img {
-    height: 47px;
+.navbar-brand img,
+.navbar-brand svg {
+    height: 50px;
+    width: auto;
 }
 #navigation .social-icons {
     margin-top: 10px;
@@ -121,7 +123,7 @@ h1, h2, h3, h4, h4, h6 {
     padding-bottom: 90px;
 }
 #showcase .background {
-    background-image: url("../images/showcase-bg5.jpg");
+    background-image: url("../images/showcase-bg.jpg");
     background-position: center bottom;
     opacity: 0.25;
     filter: alpha(opacity=25);
@@ -332,7 +334,7 @@ footer .bottom ul li a:hover {
         text-align: left;
     }
     #showcase .background {
-        opacity: .9;
+        opacity: .75;
     }
     #showcase .text-block {
         text-align: left;
